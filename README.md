@@ -40,7 +40,7 @@ FiveM 서버 콘솔에서 명령어를 통해 유저를 관리할 수 있는 시
 1. `lua/server/server.lua`에서 다음 사항을 변경합니다.
 
 ```lua
-local OverExtended = exports['oxmysql']
+local OverExtended = exports['oxmysql'] -- OxMySQL 리소스명을 입력합니다.
 
 local database = {
     vehicle = 'vrp_user_vehicles', -- 차고지 데이터베이스 테이블명을 입력합니다.
