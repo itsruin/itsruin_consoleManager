@@ -4,7 +4,7 @@ local Tunnel = module('vrp', 'lib/Tunnel')
 local Proxy = module('vrp', 'lib/Proxy')
 
 local vRP = Proxy.getInterface('vRP')
-local vRPclient = Tunnel.getInterface('vRP', GetCurrentResourceName())
+local vRPclient = Tunnel.getInterface('vRP', resource)
 
 local OverExtended = exports['oxmysql']
 
