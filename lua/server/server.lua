@@ -144,11 +144,7 @@ function reset(type, user_id)
 end
 
 local function checkNumberOrString(value)
-    if tonumber(value) ~= nil then
-        return 'number' -- 숫자인 경우
-    else
-        return 'string' -- 문자열인 경우
-    end
+    return (tonumber(value) ~= nil) and 'number' or 'string'
 end
 
 AddEventHandler('rconCommand', function(commandName, args)
