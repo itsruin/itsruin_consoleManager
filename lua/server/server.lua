@@ -10,7 +10,7 @@ local OverExtended = exports['oxmysql']
 
 local database = {
     vehicle = 'vrp_user_vehicles',
-    newbie = 'h_verify'
+    newbie = 'vrp_newbie_bonus'
 }
 
 function comma_value(amount)
